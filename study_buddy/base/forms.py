@@ -7,3 +7,4 @@ class RoomForm(ModelForm):
         model = Room
         fields = "__all__"
         # fields = ['host', 'topic', 'name', 'description']
+        exclude = ['host', 'participants']
